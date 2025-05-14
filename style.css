@@ -1,0 +1,47 @@
+/* Global */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.emphasized-text {
+    color: #004aad;
+}
+
+.section-subtitle {
+    color: #004aad;
+}
+
+/* Header */
+.header {
+    background-color: #004aad;
+}
+
+#title {
+    color: #fd3131
+}
+
+#subtitle {
+    color: #ffcf01;
+}
+
+#menu-toggle {
+    color: #fff;
+}
+
+/* Body */
+.welcome {
+    border-bottom: 2px dotted #004aad;
+}
+
+.using-pcsv {
+    border-bottom: 2px dotted #004aad;
+}
+
+/* Footer */
+.footer {
+    font-style: italic;
+}
