@@ -41,6 +41,14 @@ p {
     border-bottom: 2px dotted #004aad;
 }
 
+/* Map */
+#map {
+    height: 400px;
+    width: 80%; /* Was 100% before; 80% is an experimental and provisional value. */
+    margin-top: 20px;
+    border: 2px solid #004aad;
+}
+
 /* Footer */
 .footer {
     font-style: italic;
