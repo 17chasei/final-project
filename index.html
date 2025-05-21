@@ -33,14 +33,14 @@
 
     <div class="using-pcsv">
         <h2 class="section-title">Using PCSV</h2>
-        <p>Below is a map highlighting various locales and services operated by either the County itself or local governments within the County (Largo, Seminole, Clearwater, etc.). The map itself is provided by OpenStreetMap. For help, go to the section <a href="" target="_blank">Guide & Troubleshooting</a> below.</p>
+        <p>Below is a map highlighting various locales and services operated by either the County itself or local governments within the County (Largo, Seminole, Clearwater, etc.). The map itself is provided by OpenStreetMap. For help, go to the section <a href="#guide-and-troubleshooting-link">Guide & Troubleshooting</a> below.</p>
 
         <div id="map">
             
         </div>
     </div>
 
-    <div class="guide-and-troubleshooting">
+    <div class="guide-and-troubleshooting" id="guide-and-troubleshooting-link">
         <h2 class="section-title">Guide & Troubleshooting</h2>
         <h3 class="section-subtitle">How to use PCSV on desktop</h3>
         <p>To navigate and move around the map, you can <span class="emphasized-text">hold left click and drag the mouse</span> to the desired location. Additionally, you can <span class="emphasized-text">use the arrow keys</span> to go in their respective directions in increments.</p>
@@ -61,36 +61,44 @@
         const map = L.map('map').setView([27.9, -82.8], 11);
       
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
         }).addTo(map);
       
         L.marker([27.915013, -82.785550])
         .addTo(map)
-        .bindPopup('<b><a href="https://www.largo.com/facility_detail_T64_R49.php" target="_blank">Largo Central Park</a></b><br>Public Park<br>101 Central Park Dr, Largo, FL 33771');
+        .bindPopup('<b><a href="https://www.largo.com/facility_detail_T64_R49.php" target="_blank">Largo Central Park</a></b><br>Public park<br>101 Central Park Dr, Largo, FL 33771');
 
         L.marker([27.913626, -82.782800])
         .addTo(map)
-        .bindPopup('<b><a href="https://www.largopubliclibrary.org/" target="_blank">Largo Public Library</a></b><br>Public Library<br>120 Central Park Dr, Largo, FL 33771');
+        .bindPopup('<b><a href="https://www.largopubliclibrary.org/" target="_blank">Largo Public Library</a></b><br>Public library<br>120 Central Park Dr, Largo, FL 33771');
 
         L.marker([27.883474, -82.808437])
         .addTo(map)
-        .bindPopup('<b><a href="https://pinellas.gov/parks/florida-botanical-gardens/" target="_blank">Florida Botanical Gardens</a></b><br>Public Park<br>12520 Ulmerton Rd, Largo, FL 33774');
+        .bindPopup('<b><a href="https://pinellas.gov/parks/florida-botanical-gardens/" target="_blank">Florida Botanical Gardens</a></b><br>Public park<br>12520 Ulmerton Rd, Largo, FL 33774');
 
         L.marker([27.84925, -82.77602])
         .addTo(map)
-        .bindPopup('<b><a href="https://pinellas.gov/parks/lake-seminole-park/" target="_blank">Lake Seminole Park</a></b><br>Public Park<br>10015 Park Blvd, Seminole, FL 33777');
+        .bindPopup('<b><a href="https://pinellas.gov/parks/lake-seminole-park/" target="_blank">Lake Seminole Park</a></b><br>Public park<br>10015 Park Blvd, Seminole, FL 33777');
 
         L.marker([27.770847, -82.632825])
         .addTo(map)
-        .bindPopup('<b><a href="https://pioneerparkstpete.org/" target="_blank">Pioneer Park</a></b><br>Public Park<br>1st Ave S, St. Petersburg, FL 33701');
+        .bindPopup('<b><a href="https://pioneerparkstpete.org/" target="_blank">Pioneer Park</a></b><br>Public park<br>1st Ave S, St. Petersburg, FL 33701');
 
         L.marker([28.07647, -82.83031])
         .addTo(map)
-        .bindPopup('<b><a href="https://www.floridastateparks.org/honeymoonisland" target="_blank">Honeymoon Island State Park</a></b><br>State Park<br>1 Causeway Blvd, Dunedin, FL 34698');
+        .bindPopup('<b><a href="https://www.floridastateparks.org/honeymoonisland" target="_blank">Honeymoon Island State park</a></b><br>State park<br>1 Causeway Blvd, Dunedin, FL 34698');
 
         L.marker([28.03350, -82.81940])
         .addTo(map)
-        .bindPopup('<b><a href="https://www.floridastateparks.org/parks-and-trails/caladesi-island-state-park" target="_blank">Caladesi Island State Park</a></b><br>State Park<br>1 Causeway Blvd, Dunedin, FL 34698');
+        .bindPopup('<b><a href="https://www.floridastateparks.org/parks-and-trails/caladesi-island-state-park" target="_blank">Caladesi Island State Park</a></b><br>State park<br>1 Causeway Blvd, Dunedin, FL 34698');
+
+        L.marker([27.8524, -82.6041])
+        .addTo(map)
+        .bindPopup('<b><a href="https://pinellas.gov/parks/weedon-island-preserve/" target="_blank">Weedon Island Preserve</a></b><br>Nature preserve<br>1800 Weedon Dr NE, St. Petersburg, FL 33702');
+
+        L.marker([27.920909, -82.773855])
+        .addTo(map)
+        .bindPopup('<b><a href="https://www.playlargo.com/facilities/highland_recreation_complex/index.php" target="_blank">Highland Recreation Complex</a></b><br>Recreation center<br>400 Highland Ave, Largo, FL 33770');
     </script>      
 </body>
 
