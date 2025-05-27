@@ -54,24 +54,107 @@ p {
     cursor: pointer;
 }
 
-/* Body */
+/* Welcome to the PCSV! */
 .welcome {
     border-bottom: 2px dotted #004aad;
+    padding: 40px 20px;
 }
 
+.welcome-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.welcome .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+/* Using PCSV */
 .using-pcsv {
     border-bottom: 2px dotted #004aad;
+    padding: 40px 20px;
+    margin-bottom: 20px;
 }
 
-/* Map */
+.using-pcsv-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.using-pcsv .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.using-pcsv p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    padding: 0 10px;
+    text-align: justify;
+}
+
 #map {
     height: 400px;
-    width: 80%; /* Was 100% before; 80% is an experimental and provisional value. */
-    margin-top: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
     border: 2px solid #004aad;
+    border-radius: 5px;
+}
+
+/* Guide and Troubleshooting */
+.guide-and-troubleshooting {
+    border-bottom: 2px dotted #004aad;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.guide-and-troubleshooting-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.guide-and-troubleshooting .section-title
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guide-and-troubleshooting .section-subtitle {
+    margin: 0 auto 15px auto;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.guide-and-troubleshooting p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    padding: 0 10px;
+    text-align: justify;
 }
 
 /* Footer */
 .footer {
     font-style: italic;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 13px;
 }
