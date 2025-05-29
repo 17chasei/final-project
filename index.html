@@ -24,7 +24,9 @@
             <h1 id="title">PCSV</h1>
             <h3 id="subtitle">Pinellas County Services Viewer</h3>
         </div>
-        <i class="fas fa-bars" id="menu-toggle"></i>
+        <!-- Temporary dark mode option - will be incorporated into hamburger menu -->
+        <button id="dark-mode-toggle">Dark Mode</button> 
+        <!-- <i class="fas fa-bars" id="menu-toggle"></i> -->
     </div>
     <div class="welcome">
         <div class="welcome-content">
@@ -52,7 +54,7 @@
             <p>To zoom in or out with your mouse, you can <span class="emphasized-text">scroll up</span> to zoom in or <span class="emphasized-text">scroll down</span> to zoom out; you will zoom wherever your mouse pointer is with this method. You may also <span class="emphasized-text">press the = and - keys</span> to zoom in and out respectively. Finally, you may <span class="emphasized-text">click the plus and minus symbols on the top left</span> of the viewer to zoom in and out respectively.</p>
             <p>Once you find your service of choice, you can <span class="emphasized-text">click on its marker</span> to learn more about it.</p>
             <h3 class="section-subtitle">How to use PCSV on mobile</h3>
-            <p>To be added!</p>
+            <p>To zoom in, <span class="emphasized-text">use two fingers and move them outward</span>. To zoom out, <span class="emphasized-text"> pinch the map with two fingers</span>. To open a marker, <span class="emphasized-text">tap it</span>.</p>
             <h3 class="section-subtitle">What info does PCSV show me?</h3>
             <p>PCSV shows you the location of a service, what kind of service it is, and the official link to the service’s website. More info may be added to PCSV’s entries as needed.</p>
         </div>
@@ -62,7 +64,7 @@
         <div class="footer-content">
             <p>By <a href="https://github.com/17chasei" target="blank">Isaiah Chase</a></p>
             <p>Made with <a href="https://leafletjs.com/" target="_blank">Leaflet</a> and <a href="https://www.openstreetmap.org/about" target="_blank">OpenStreetMap</a></p>
-            <p>Last updated on <span class="emphasized-text">5/27/25</span></p>
+            <p>Last updated on <span class="emphasized-text">5/29/25</span></p>
         </div>
     </div>
 
@@ -108,7 +110,20 @@
         L.marker([27.920909, -82.773855])
         .addTo(map)
         .bindPopup('<b><a href="https://www.playlargo.com/facilities/highland_recreation_complex/index.php" target="_blank">Highland Recreation Complex</a></b><br>Recreation center<br>400 Highland Ave, Largo, FL 33770');
-    </script>      
+    </script>    
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+    
+        // Load saved mode
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+    </script>     
 </body>
 
 </html>

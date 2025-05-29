@@ -103,7 +103,7 @@ p {
 
 #map {
     height: 400px;
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     margin: 30px auto;
     border: 2px solid #004aad;
@@ -158,3 +158,62 @@ p {
     text-align: center;
     font-size: 13px;
 }
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .header {
+    background-color: #ffcf01;
+}
+
+body.dark-mode #subtitle {
+    color: #004aad;
+}
+
+body.dark-mode .emphasized-text {
+    color: #ffcf01;
+}
+
+body.dark-mode .section-title {
+    color: #fff;
+}
+
+body.dark-mode .section-subtitle {
+    color: #ffcf01;
+}
+
+body.dark-mode a {
+    color: #eee400;
+}
+
+body.dark-mode .welcome {
+    border-bottom: 2px dotted #ffcf01;
+}
+
+body.dark-mode .using-pcsv {
+    border-bottom: 2px dotted #ffcf01;
+}
+
+body.dark-mode .guide-and-troubleshooting {
+    border-bottom: 2px dotted #ffcf01;
+}
+
+body.dark-mode #map {
+    border-color: #ffcf01;
+}
+
+body.dark-mode .leaflet-control-zoom a {
+    color: #000;
+}
+
+body.dark-mode .leaflet-control-attribution a {
+    color: #0078A8;
+}
+
+body.dark-mode .leaflet-popup-content a {
+    color: #0078A8;
+}
+
